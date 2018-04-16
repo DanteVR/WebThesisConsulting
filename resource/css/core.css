@@ -8,6 +8,16 @@
     display: inline-block;
 }
 
+.nos-class{
+    margin-top: 80px;
+    margin-bottom: 80px
+}
+
+.areas{
+    margin-top: 80px;
+    margin-bottom: 80px
+}
+
 .icon-object > i {
     font-size: 32px;
     top: 0;
@@ -25,9 +35,31 @@
     font-size: 13px;
 }
 
+.text-size-lg{
+    font-size: 26px;
+}
+
 .icon-t{
     width: 16px;
     height: 16px;
+}
+
+.parallax-overlay {
+    background-color: rgba(13, 70, 83, 0.75);
+    height: 700px;
+    width: 100%;
+}
+
+.secondary-background {
+    background-color: #3367D6;
+}
+
+.text{
+    padding: 50px;
+}
+
+.section-title{
+    margin: 15px;
 }
 
 html {
