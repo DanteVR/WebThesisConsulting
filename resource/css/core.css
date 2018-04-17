@@ -66,10 +66,17 @@
 }
 
 .parallax-overlay {
-    background-color: rgba(13, 70, 83, 0.75);
-    height: 700px;
+    background-color: rgba(13, 70, 83, 0.45);
+    height:900px;
     width: 100%;
 }
+
+.parallax-over{
+    background-color: rgba(13, 70, 83, 0.75);
+    height:900px;
+    width: 100%;
+}
+
 
 .secondary-background {
     background-color: #3367D6;
