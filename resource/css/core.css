@@ -22,9 +22,17 @@
     padding-top: 100px;
 }
 
+.padding-sm{
+    padding-top: 70px;
+}
+
 .areas{
     margin-top: 80px;
     margin-bottom: 80px
+}
+
+.mb-8{
+    margin-bottom: 100px;
 }
 
 .icon-object > i {
@@ -46,6 +54,10 @@
 
 .text-size-lg{
     font-size: 26px;
+}
+
+.text-size-xlg{
+    font-size: 35px;
 }
 
 .icon-t{
