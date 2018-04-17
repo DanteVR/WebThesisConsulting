@@ -92,7 +92,7 @@
               <a class="nav-link" href="#Areas">Nuestras Áreas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Normas">Normas de Citación</a>
+              <a class="nav-link cursor" data-toggle="modal" data-target="#normas" >Normas de Citación</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Sedes">Sedes</a>
@@ -110,7 +110,7 @@
           <form class="form-inline my-2 my-lg-0">
           <!-- Button modal -->
                 <div>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
                     Ingresar
                   </button>
                 </div>
@@ -129,22 +129,22 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background: url(resource/img/slide/graduacion.jpg); height:auto;">
+      <div class="carousel-inner" style="width: 100%;">
+        <div class="carousel-item active" style="background: url(resource/img/slide/graduacion.jpg); height:auto; width: 100%;">
           <div class="parallax-overlay">
            
           </div>
         </div>
 
 
-        <div class="carousel-item" style="background: url(resource/img/slide/graduacion2.jpg); height:auto">
+        <div class="carousel-item" style="background: url(resource/img/slide/graduacion2.jpg); height:auto; width: 100%;">
           <div class="parallax-overlay">
 
           </div>
         </div>
       
 
-        <div class="carousel-item" style="background: url(resource/img/slide/graduacion5.jpg); height:auto">
+        <div class="carousel-item" style="background: url(resource/img/slide/graduacion5.jpg); height:auto; width: 100%;">
           <div class="parallax-overlay">
 
           </div>
@@ -233,26 +233,50 @@
     <!-- End Nuestras <div class="col-md-6 mt-5">Áreas -->
 
 
-    <!-- Normas -->
-    <div id="Normas" class="row secondary-background">
-      <div class="container">
-         <div class="col-md-12 text text-white">
-            <h4 class="lead text-size-lg">Normas de Citación</h4>
-         </div>
+    <!-- Modal Normas -->
+    <div class="modal fade bd-example-modal-sm" id="normas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100">Normas de Citación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="icon-object border-primary-300 text-primary-300"><i class="icon-book"></i></div>
+              <h6 class="lead text-size-sm mt-4">Para nuestro mejor desempeño en el trabajo, trabajamos con las siguientes normas de citación.</h6>
+            </div>
+            <div class="container">
+              <div class="row mt-5">
+                    <div class="col-md-6 col-xs-12 bg-past1 border nor-hov">
+                       <a href="#"><p class="text-center text-white p-5">APA</p></a>
+                    </div>
+                    <div class="col-md-6 col-xs-12 bg-past2 border nor-hov">
+                       <a href="#"><p class="text-center text-white p-5">HARVARD</p></a>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="col-md-6 col-xs-12 bg-past3 border nor-hov">
+                       <a href="#"><p class="text-center text-white p-5">ISO 9000</p></a>
+                    </div>
+                    <div class="col-md-6 col-xs-12 bg-past4 border nor-hov">
+                       <a href="#"><p class="text-center text-white p-5">VANCOUVER</p></a>
+                    </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-    <section class="normas">        
-            <div class="container">
-                <div class="row text-center mt-5 mb-5">                
-                  <div class="col-md-3 col-sm-6 col-xs-12 bg-past1"><p class="lead text-white p-5">APA</p></div>                   
-                  <div class="col-md-3 col-sm-6 col-xs-12 bg-past2"><p class="lead text-white p-5">HARVARD</p></div>
-                  <div class="col-md-3 col-sm-6 col-xs-12 bg-past3"><p class="lead text-white p-5">ISO 9000</p></div>
-                  <div class="col-md-3 col-sm-6 col-xs-12 bg-past4"><p class="lead text-white p-5">VANCOUVER</p></div>
-                </div>
-            </div>
-            <h3 class="text-center lead p-5">Para nuestro mejor desempeño en el trabajo, trabajamos con las siguientes normas de citación.</h3>
-    </section> 
-    <!-- End Normas -->
+    <!-- End Modal Normas -->
 
 
     <!-- Sedes -->
