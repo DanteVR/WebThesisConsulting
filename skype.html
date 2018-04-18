@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/css/icons/styles.css">
+    <link rel="stylesheet" href="resource/css/core.css">
+    <link rel="stylesheet" href="resource/css/colors.css">
+
+    <title>Cita Skype</title>
+  </head>
+  <!-- Body -->
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-sm" id="ModalSkype" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100">Inicio de Sesión - #CYSEG</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <form method="POST">
+                <div class="form-group">
+                  <label>Usuario</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="icon-user-tie"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="txtUsuario" placeholder="Usuario">
+                  </div>
+                </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+
+    <!-- Header-->
+    <header>
+      <nav class="navbar navbar-light bg-light fixed-top justify-content-between">
+        <a class="navbar-brand">GRUPO CYSEG</a>
+        <form class="form-inline">
+          <button class="btn btn-primary btn-lg my-2 my-sm-0">Cambiar Sede</button>
+        </form>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+
+    <!--Section-->
+    <section>
+      <div class="mx-auto d-block">
+          <div class="mx-auto d-block" style="background: url(resource/img/skype2.png) no-repeat; height:550px; width: 100%;">
+          <div class="parallax-overlay2">
+            <div class="flex-column flex-md-row justify-content-center">
+              <div class="text-center">
+                <p class="justify-content-center">SEPARE SU CITA EN SKYPE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="resource/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.min.js"></script>
+    <script src="resource/js/smooth-scroll.min.js"></script>
+    <script>
+      var scroll =  new  SmoothScroll ('a[href*="#Nosotros"],a[href*="#Areas"],a[href*="#Sedes"],a[href*="#Contacto"]',{
+        speed: 900,
+      });
+    </script>
+  </body>
+  <!-- End Body -->
+</html>

@@ -17,7 +17,6 @@
   <body>
 
 
-
     <!-- Modal -->
     <div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm" role="document">
@@ -81,27 +80,27 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navMain">
-          <ul class="navbar-nav text-size-xm mr-auto mt-2 mt-lg-0">
+          <ul class="smooth-scroll navbar-nav text-size-xm mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Nosotros">Nosotros</a>
+              <a data-scroll class="nav-link" href="#Nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Areas">Nuestras Áreas</a>
+              <a data-scroll class="nav-link" href="#Areas">Nuestras Áreas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link cursor" data-toggle="modal" data-target="#normas" >Normas de Citación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Sedes">Sedes</a>
+              <a data-scroll class="nav-link" href="#Sedes">Sedes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cita Skype</a>
+              <a class="nav-link" href="skype.html" target="_blank">Cita Skype</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contacto">Contáctanos</a>
+              <a data-scroll class="nav-link" href="#Contacto">Contáctanos</a>
             </li>
              <li class="nav-item">
               <a class="nav-link" href="#">Trabaja con Nosotros</a>
@@ -251,20 +250,20 @@
             </div>
             <div class="container">
               <div class="row mt-5">
-                    <div class="col-md-6 col-xs-12 bg-past1 border nor-hov">
-                       <a href="#"><p class="text-center text-white p-5">APA</p></a>
+                    <div class="col-md-6 col-xs-12">
+                       <a href="#"><p class="bg-past1 text-center text-white p-5 nor-hov">APA</p></a>
                     </div>
-                    <div class="col-md-6 col-xs-12 bg-past2 border nor-hov">
-                       <a href="#"><p class="text-center text-white p-5">HARVARD</p></a>
+                    <div class="col-md-6 col-xs-12">
+                       <a href="#"><p class="text-center bg-past2 text-white p-5 nor-hov">HARVARD</p></a>
                     </div>
               </div>
 
-              <div class="row">
-                    <div class="col-md-6 col-xs-12 bg-past3 border nor-hov">
-                       <a href="#"><p class="text-center text-white p-5">ISO 9000</p></a>
+              <div class="row mtn">
+                    <div class="col-md-6 col-xs-12">
+                       <a href="#"><p class="text-center text-white p-5 bg-past3 nor-hov">ISO 9000</p></a>
                     </div>
-                    <div class="col-md-6 col-xs-12 bg-past4 border nor-hov">
-                       <a href="#"><p class="text-center text-white p-5">VANCOUVER</p></a>
+                    <div class="col-md-6 col-xs-12">
+                       <a href="#"><p class="text-center text-white p-5 bg-past4 nor-hov">VANCOUVER</p></a>
                     </div>
               </div>
             </div>
@@ -284,7 +283,7 @@
       <div class="parallax-over" style="height:auto;">     
             <div class="container">
                 <div class="text-center">
-                    <h3 class="text-center text-white font-weight-light padding-sm text-size-lg">NUESTRAS SEDES</h3>
+                    <h3 class="text-center text-white font-weight-light padding-sm text-size-lg">Nuestras Sedes</h3>
                 </div>  
                 <div class="row text-center mt-5">               
                   <div class="col-md-6 col-xs-12 text-white font-weight-light mt-4">
@@ -426,6 +425,12 @@
     <script src="resource/js/jquery-3.2.1.slim.min.js"></script>
     <script src="resource/js/popper.min.js"></script>
     <script src="resource/js/bootstrap.min.js"></script>
+    <script src="resource/js/smooth-scroll.min.js"></script>
+    <script>
+      var scroll =  new  SmoothScroll ('a[href*="#Nosotros"],a[href*="#Areas"],a[href*="#Sedes"],a[href*="#Contacto"]',{
+        speed: 900,
+      });
+    </script>
   </body>
   <!-- End Body -->
 </html>

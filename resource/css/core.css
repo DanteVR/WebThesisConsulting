@@ -22,6 +22,14 @@ a:link{
     margin-bottom: 80px
 }
 
+.mtn{
+    margin-top: 13px;
+}
+
+.mtxl{
+    margin-top: 100px;
+}
+
 .nor-hov:hover{
     background-color: #3367D6;
 }
@@ -84,6 +92,12 @@ a:link{
 .parallax-overlay{
     background-color: rgba(13, 70, 83, 0.65);
     height:900px;
+    width: 100%;
+}
+
+.parallax-overlay2{
+    background-color: rgba(13, 70, 83, 0.65);
+    height:550px;
     width: 100%;
 }
 
