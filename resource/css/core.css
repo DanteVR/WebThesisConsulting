@@ -123,10 +123,6 @@ a:link{
     width: 100%;
 }
 
-.p-10{
-    padding: 100px;
-}
-
 .parallax-overlay2{
     background-color: rgba(0, 0, 0, 0.80);
     height:100vh;
@@ -288,6 +284,24 @@ body.fixed-nav {
     overflow: hidden;
     max-width: none;
     text-overflow: ellipsis; 
+}
+
+
+.p-10{
+        padding: 100px;
+}
+
+
+@media (max-width: 900px) {
+    .p-10{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .p-10{
+        padding: 1px;
+    }
 }
 
 @media (min-width: 992px) {
