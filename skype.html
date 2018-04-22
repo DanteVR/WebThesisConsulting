@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="resource/css/icons/styles.css">
     <link rel="stylesheet" href="resource/css/core.css">
     <link rel="stylesheet" href="resource/css/colors.css">
-    <link rel="stylesheet" href="resource/css/fullcalendar.css">
-    <link rel="stylesheet" href="resource/css/fullcalendar.print.css" media="print">
+    <link rel='stylesheet' href="resource/css/fullcalendar.css"/>
 
     <title>Cita Skype</title>
   </head>
@@ -79,7 +78,7 @@
     <!--Section-->
     <section>
       <div>
-          <div class="mx-auto d-block" style="background: url(resource/img/skype2.png) no-repeat fixed; height:600px; width: 100%;">
+          <div class="mx-auto d-block" style="background: url(resource/img/skype2.png) no-repeat fixed; height:100vh; width: 100%;">
           <div class="parallax-overlay2">
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
               <div class="text-center mtxl">
@@ -186,17 +185,30 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="resource/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="resource/js/script.js"></script>
-    <script src="resource/js/popper.min.js"></script>
-    <script src="resource/js/bootstrap.min.js"></script>
-    <script src="resource/js/smooth-scroll.min.js"></script>
     <script src="resource/js/moment.min.js"></script>
     <script src="resource/js/fullcalendar.js"></script>
-   
+    <script src='resource/js/es.js'></script>
+    <script src="resource/js/bootstrap.min.js"></script>
+    <script src="resource/js/smooth-scroll.min.js"></script>
+
  
     <script>
       var scroll =  new  SmoothScroll ('a[href*="#titulo"]',{
         speed: 900,
+      });
+
+      $('#calendar').fullCalendar({
+        minTime: "08:00:00",
+        defaultView: 'agendaWeek',
+        locale: 'es',
+        allDaySlot: false,
+        maxTime: "19:00:00",
+        themeSystem: 'standard',
+        hiddenDays: [0],
+        height:640,
+        dayClick: function() {
+          alert('a day has been clicked!');
+        }
       });
     </script>
   </body>

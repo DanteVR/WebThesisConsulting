@@ -71,8 +71,17 @@ a:link{
     margin-bottom: 100px;
 }
 
+.m-8{
+    margin: 80px;
+}
+
 .icon-object > i {
     font-size: 32px;
+    top: 0;
+}
+
+.icon-object2 > i {
+    font-size: 160px;
     top: 0;
 }
 
@@ -114,9 +123,13 @@ a:link{
     width: 100%;
 }
 
+.p-10{
+    padding: 100px;
+}
+
 .parallax-overlay2{
     background-color: rgba(0, 0, 0, 0.80);
-    height:600px;
+    height:100vh;
     width: 100%;
 }
 
@@ -124,6 +137,11 @@ a:link{
     background-color: rgba(13, 70, 83, 0.75);
     height:900px;
     width: 100%;
+}
+
+.text-p{
+    color: #00305B;
+    border-color: #00305B;
 }
 
 .carousel-inner > .carousel-item{
@@ -134,7 +152,7 @@ a:link{
 
 
 .secondary-background {
-    background-color: #3367D6;
+    background-color: #00305B;
 }
 
 .text{
