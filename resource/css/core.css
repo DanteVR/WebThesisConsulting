@@ -75,6 +75,22 @@ a:link{
     margin: 80px;
 }
 
+.over-f{
+    color:#6c757d;
+}
+
+.over-f:hover{
+    color:#007bff;
+}
+
+.over-y{
+    color:#6c757d;
+}
+
+.over-y:hover{
+    color:#dc3545;
+}
+
 .icon-object > i {
     font-size: 32px;
     top: 0;
@@ -87,6 +103,10 @@ a:link{
 
 .text-size-ssm{
     font-size: 12px;
+}
+
+.text-size-sm{
+    font-size: 14px;
 }
 
 .text-size-xsm{
@@ -310,6 +330,12 @@ body.fixed-nav {
     }
 }
 
+@media (max-width: 769px) {
+    .m-resp{
+        margin-top: 15px
+    }
+}
+
 @media (min-width: 992px) {
     #mainNav .navbar-brand {
         width: 250px; 
@@ -334,7 +360,7 @@ body.fixed-nav {
         padding: 0; 
     }
     #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-        padding: 1em; 
+        padding: 0.8em; 
     }
     #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
     #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
